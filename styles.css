@@ -12,3 +12,35 @@ html {
 h1 {
     text-align: center;
 }
+
+#timelineContainer {
+    display: grid;
+    grid-template-columns: 1fr 0.01fr 0.01fr 1fr;
+    grid-template-areas: 'timelineLeft verticalLineLeft verticalLineRight timelineRight';
+}
+
+.timelineLeft {
+    grid-area: timelineLeft;
+    text-align: center;
+}
+
+.timelineRight {
+    grid-area: timelineRight;
+    text-align: center;
+}
+
+.verticalLineLeft {
+    border-right: min(1vw, 10px) solid black;
+    grid-area: verticalLineLeft;
+    text-align: center;
+}
+
+.verticalLineRight {
+    border-left: min(1vw, 10px) solid black;
+    grid-area: verticalLineRight;
+    text-align: center;
+}
+
+#lineCanvas {
+    position: absolute;
+}
