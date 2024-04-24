@@ -9,38 +9,24 @@ html {
     margin-inline: 5px;
 }
 
+main {
+    margin-inline: auto;
+    border: thin solid black;
+    max-width: 1400px;
+}
+
 h1 {
     text-align: center;
+    margin-top: 0.3%;
+    margin-inline: 0.3%;
 }
 
-#timelineContainer {
-    display: grid;
-    grid-template-columns: 1fr 0.01fr 0.01fr 1fr;
-    grid-template-areas: 'timelineLeft verticalLineLeft verticalLineRight timelineRight';
+p {
+    margin-inline: 0.3%;
 }
 
-.timelineLeft {
-    grid-area: timelineLeft;
-    text-align: center;
-}
-
-.timelineRight {
-    grid-area: timelineRight;
-    text-align: center;
-}
-
-.verticalLineLeft {
-    border-right: min(1vw, 10px) solid black;
-    grid-area: verticalLineLeft;
-    text-align: center;
-}
-
-.verticalLineRight {
-    border-left: min(1vw, 10px) solid black;
-    grid-area: verticalLineRight;
-    text-align: center;
-}
-
-#lineCanvas {
-    position: absolute;
+iframe {
+    width: 100%;
+    margin-bottom: 0.3%;
+    margin-inline: auto;
 }
